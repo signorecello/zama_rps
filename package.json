@@ -1,0 +1,22 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@fhevm/hardhat-plugin": "^0.3.0-1",
+    "@fhevm/mock-utils": "^0.3.0-1",
+    "@fhevm/solidity": "^0.9.1",
+    "@nomicfoundation/hardhat-ethers": "^3.1.2",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@zama-fhe/oracle-solidity": "^0.3.0-1",
+    "@zama-fhe/relayer-sdk": "^0.3.0-5",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.26.0"
+  },
+  "scripts": {
+    "calculate": "bun run utils/calculateEncryptedMove.ts",
+    "compile": "hardhat compile",
+    "deploy:sepolia:solo": "bun run compile && hardhat run scripts/deploy-solo.ts --network sepolia",
+    "deploy:sepolia:two": "bun run compile && hardhat run scripts/deploy.ts --network sepolia",
+    "test": "bun run compile && hardhat test"
+  }
+}
