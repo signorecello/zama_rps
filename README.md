@@ -8,6 +8,10 @@ Players call the `submitMove` function with their encrypted move. They can then 
 
 On the solo version, since there's no other player, the flow is simplified: the player just calls `playRound` with their encrypted move, and the "computer" move is generated on-chain using `FHE.randEuint8()`. 
 
+## Code walkthrough
+
+Here's a little video of me [walking through the code](https://streamable.com/latap6)
+
 ## Prerequisites
 
 - `node.js`
