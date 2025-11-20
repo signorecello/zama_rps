@@ -21,8 +21,8 @@ On the solo version, since there's no other player, the flow is simplified: the 
 Clone and install dependencies:
 
 ```bash
-git clone https://github.com/zpedro/fhevm_rps.git
-cd fhevm_rps
+git clone https://github.com/signorecello/zama_rps.git
+cd zama_rps
 bun i
 ```
 
